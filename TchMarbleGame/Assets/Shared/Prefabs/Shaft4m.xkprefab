@@ -1,0 +1,58 @@
+!PrefabAsset
+Id: 0a6ed75c-0e4f-4120-842b-a1e97941401d
+SerializedVersion: {Xenko: 1.7.0-beta04}
+Tags: []
+Hierarchy:
+    ~Id: adcb757d-054c-420b-8106-52e8e9aae645
+    RootPartIds:
+        - e53f206a-bd66-4c7f-8fa9-bc75a89b5709
+    Parts:
+        -   Entity:
+                Id: e53f206a-bd66-4c7f-8fa9-bc75a89b5709
+                Name: Shaft4m
+                Components:
+                    - !TransformComponent
+                        ~Id: f1ab6fe3-843f-46e6-aa47-1faf6104aa29
+                        Children: []
+                        Position: {X: 1.8338697, Y: 0.0, Z: -0.01326251}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                    - !ModelComponent
+                        ~Id: 6bcf4889-c1f9-48db-b91f-839577d8f75a
+                        Model: 484bd672-eeaf-45f1-a782-76c03669ddaf/1c0dbee0-d2d9-441a-8c71-275bde65e38b:Models/Shaft4m
+                        Materials:
+                            - null
+                    - !StaticColliderComponent
+                        ~Id: 0f79ad66-cdf1-4ab4-b601-48111faaa8ac
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            - !BoxColliderShapeDesc
+                                ~Id: c1f03bed-592e-458e-aa4d-5874e04f510a
+                                Is2D: false
+                                Size: {X: 0.1, Y: 4.0, Z: 1.4}
+                                LocalOffset: {X: 0.65, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            - !BoxColliderShapeDesc
+                                ~Id: fc3f1922-7e89-46f5-a193-e35e9e698579
+                                Is2D: false
+                                Size: {X: 0.1, Y: 4.0, Z: 1.4}
+                                LocalOffset: {X: -0.65, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            - !BoxColliderShapeDesc
+                                ~Id: f284df87-8e02-4c85-8def-7300b5d80a9f
+                                Is2D: false
+                                Size: {X: 1.4, Y: 4.0, Z: 0.1}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.65}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            - !BoxColliderShapeDesc
+                                ~Id: 582806e9-4ce4-42ae-bed5-404925be5ccf
+                                Is2D: false
+                                Size: {X: 1.4, Y: 4.0, Z: 0.1}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: -0.65}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}

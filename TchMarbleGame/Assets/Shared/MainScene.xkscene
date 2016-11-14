@@ -142,7 +142,83 @@ Hierarchy:
         - 983daa97-90f1-4a2a-81fa-c06605cbcdbb
         - e56ac0d7-c6c5-479f-ab65-e1bac0ae797f
         - 7b7bc716-e7b7-4fea-9662-8f0af285d4ed
+        - 063b89e3-0bd2-4c47-92c1-da8155e2f0a3
+        - da6f07f1-ddd6-4b17-93fa-030fa159f7db
+        - 2ccb3a0b-40fb-4412-b6f8-131767de068f
     Parts:
+        -   Entity:
+                Id: 063b89e3-0bd2-4c47-92c1-da8155e2f0a3
+                Name: ShaftCornerShort
+                Components:
+                    - !TransformComponent
+                        ~Id: 5114917b-37ec-43c2-9b64-5ffcfa1fcdf1
+                        Children: []
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                    - !ModelComponent
+                        ~Id: e851f6c8-93d4-47d0-b237-47847ab57fdc
+                        Model: 54d3a550-65e9-49a8-b3b6-5ccb34612063/5fdbba0c-d4d8-4353-9c61-ce6c34d8f694:Models/ShaftCornerShort
+                        Materials:
+                            - null
+                    - !StaticColliderComponent
+                        ~Id: 31e7f02a-19ed-42ba-8ef6-1170488d00ab
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            - !BoxColliderShapeDesc
+                                ~Id: c2407c57-12ac-40a9-b508-f7b73f2baee2
+                                Is2D: false
+                                Size: {X: 0.1, Y: 0.1, Z: 1.4}
+                                LocalOffset: {X: -0.65, Y: 0.65, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            - !BoxColliderShapeDesc
+                                ~Id: 50e2b294-b8d4-4be6-b55a-73ae506bbeec
+                                Is2D: false
+                                Size: {X: 0.1, Y: 0.1, Z: 1.4}
+                                LocalOffset: {X: 0.65, Y: -0.65, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            - !BoxColliderShapeDesc
+                                ~Id: 8a5a9e1a-c868-4ebd-8cc0-892f7711bed9
+                                Is2D: false
+                                Size: {X: 0.1, Y: 0.67, Z: 1.4}
+                                LocalOffset: {X: -0.254, Y: -0.254, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.382683456, W: 0.9238795}
+                            - !BoxColliderShapeDesc
+                                ~Id: 0f07c6ce-7905-4547-ab76-074b367f5397
+                                Is2D: false
+                                Size: {X: 0.1, Y: 0.67, Z: 1.4}
+                                LocalOffset: {X: -0.57, Y: 0.29, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.1305262, W: 0.9914449}
+                            - !BoxColliderShapeDesc
+                                ~Id: 2bf11e8a-0893-4b15-a3b3-9db394dcd8ee
+                                Is2D: false
+                                Size: {X: 0.1, Y: 0.67, Z: 1.4}
+                                LocalOffset: {X: 0.29, Y: -0.57, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: -0.7933533, W: 0.6087614}
+                            - !BoxColliderShapeDesc
+                                ~Id: 07a7c658-29cd-40c4-b83a-485764e31b74
+                                Is2D: false
+                                Size: {X: 0.1, Y: 0.1, Z: 1.4}
+                                LocalOffset: {X: 0.65, Y: 0.65, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            - !BoxColliderShapeDesc
+                                ~Id: 7e315d72-ba7e-472b-8809-1778fda7d8d2
+                                Is2D: false
+                                Size: {X: 1.4, Y: 1.4, Z: 0.1}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.65}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            - !BoxColliderShapeDesc
+                                ~Id: 58a7fc23-d328-4c26-8277-ae705a575fc8
+                                Is2D: false
+                                Size: {X: 1.4, Y: 1.4, Z: 0.1}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: -0.65}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Entity:
                 Id: 1ef63f6f-55aa-4f2f-ba73-88736ac2de72
                 Name: Camera
@@ -165,13 +241,24 @@ Hierarchy:
                         MouseRotationSpeed: {X: 90.0, Y: 60.0}
                         TouchRotationSpeed: {X: 60.0, Y: 40.0}
         -   Entity:
+                Id: 2ccb3a0b-40fb-4412-b6f8-131767de068f
+                Name: ShaftCornerShort (3)
+                Components:
+                    - !TransformComponent
+                        ~Id: 3500c736-81a9-4c19-b244-f39e6f090e21
+                        Children:
+                            - 86860062-11d2-4709-bcd3-01c9508990df/5114917b-37ec-43c2-9b64-5ffcfa1fcdf1
+                        Position: {X: 1.4, Y: -1.4, Z: 0.0}
+                        Rotation: {X: 0.0, Y: -0.707106769, Z: 0.0, W: 0.707106769}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+        -   Entity:
                 Id: 7b7bc716-e7b7-4fea-9662-8f0af285d4ed
                 Name: Sphere
                 Components:
                     - !TransformComponent
                         ~Id: eb96c9c6-781d-4abf-8b8d-876e0a7ec392
                         Children: []
-                        Position: {X: 0.0, Y: 0.5, Z: 0.0}
+                        Position: {X: 0.0, Y: 1.83942866, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                     - !ModelComponent
@@ -200,6 +287,81 @@ Hierarchy:
                                 ~Id: 2e3db091-9efc-4dec-b471-a8d09c45b25b
                                 Is2D: false
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+        -   BaseId: e1dbd4b6-49b6-4394-837e-f572dfa98a2c
+            BasePartInstanceId: 8a81dcff-c28b-4ebd-b9d2-9e4f86121b8c
+            Entity:
+                Id: 86860062-11d2-4709-bcd3-01c9508990df
+                Name: ShaftCornerShort
+                Components:
+                    - !TransformComponent
+                        ~Id: 5114917b-37ec-43c2-9b64-5ffcfa1fcdf1
+                        Children: []
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                    - !ModelComponent
+                        ~Id: e851f6c8-93d4-47d0-b237-47847ab57fdc
+                        Model: 54d3a550-65e9-49a8-b3b6-5ccb34612063/5fdbba0c-d4d8-4353-9c61-ce6c34d8f694:Models/ShaftCornerShort
+                        Materials:
+                            - null
+                    - !StaticColliderComponent
+                        ~Id: 31e7f02a-19ed-42ba-8ef6-1170488d00ab
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            - !BoxColliderShapeDesc
+                                ~Id: c2407c57-12ac-40a9-b508-f7b73f2baee2
+                                Is2D: false
+                                Size: {X: 0.1, Y: 0.1, Z: 1.4}
+                                LocalOffset: {X: -0.65, Y: 0.65, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            - !BoxColliderShapeDesc
+                                ~Id: 50e2b294-b8d4-4be6-b55a-73ae506bbeec
+                                Is2D: false
+                                Size: {X: 0.1, Y: 0.1, Z: 1.4}
+                                LocalOffset: {X: 0.65, Y: -0.65, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            - !BoxColliderShapeDesc
+                                ~Id: 8a5a9e1a-c868-4ebd-8cc0-892f7711bed9
+                                Is2D: false
+                                Size: {X: 0.1, Y: 0.67, Z: 1.4}
+                                LocalOffset: {X: -0.254, Y: -0.254, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.382683456, W: 0.9238795}
+                            - !BoxColliderShapeDesc
+                                ~Id: 0f07c6ce-7905-4547-ab76-074b367f5397
+                                Is2D: false
+                                Size: {X: 0.1, Y: 0.67, Z: 1.4}
+                                LocalOffset: {X: -0.57, Y: 0.29, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.1305262, W: 0.9914449}
+                            - !BoxColliderShapeDesc
+                                ~Id: 2bf11e8a-0893-4b15-a3b3-9db394dcd8ee
+                                Is2D: false
+                                Size: {X: 0.1, Y: 0.67, Z: 1.4}
+                                LocalOffset: {X: 0.29, Y: -0.57, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: -0.7933533, W: 0.6087614}
+                            - !BoxColliderShapeDesc
+                                ~Id: 07a7c658-29cd-40c4-b83a-485764e31b74
+                                Is2D: false
+                                Size: {X: 0.1, Y: 0.1, Z: 1.4}
+                                LocalOffset: {X: 0.65, Y: 0.65, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            - !BoxColliderShapeDesc
+                                ~Id: 7e315d72-ba7e-472b-8809-1778fda7d8d2
+                                Is2D: false
+                                Size: {X: 1.4, Y: 1.4, Z: 0.1}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.65}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            - !BoxColliderShapeDesc
+                                ~Id: 58a7fc23-d328-4c26-8277-ae705a575fc8
+                                Is2D: false
+                                Size: {X: 1.4, Y: 1.4, Z: 0.1}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: -0.65}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Entity:
                 Id: 983daa97-90f1-4a2a-81fa-c06605cbcdbb
                 Name: Directional light
@@ -231,6 +393,92 @@ Hierarchy:
                                 BiasParameters:
                                     ~Id: af11c704-7164-45d6-b070-6ef52b80bfa5
                         Intensity: 5.0
+        -   BaseId: e1dbd4b6-49b6-4394-837e-f572dfa98a2c
+            BasePartInstanceId: acd30a8a-eb4f-4f3e-b9ae-4192516924a4
+            Entity:
+                Id: afb54126-a189-408a-be33-9fb6ca55d828
+                Name: ShaftCornerShort
+                Components:
+                    - !TransformComponent
+                        ~Id: 5114917b-37ec-43c2-9b64-5ffcfa1fcdf1
+                        Children: []
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                    - !ModelComponent
+                        ~Id: e851f6c8-93d4-47d0-b237-47847ab57fdc
+                        Model: 54d3a550-65e9-49a8-b3b6-5ccb34612063/5fdbba0c-d4d8-4353-9c61-ce6c34d8f694:Models/ShaftCornerShort
+                        Materials:
+                            - null
+                    - !StaticColliderComponent
+                        ~Id: 31e7f02a-19ed-42ba-8ef6-1170488d00ab
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            - !BoxColliderShapeDesc
+                                ~Id: c2407c57-12ac-40a9-b508-f7b73f2baee2
+                                Is2D: false
+                                Size: {X: 0.1, Y: 0.1, Z: 1.4}
+                                LocalOffset: {X: -0.65, Y: 0.65, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            - !BoxColliderShapeDesc
+                                ~Id: 50e2b294-b8d4-4be6-b55a-73ae506bbeec
+                                Is2D: false
+                                Size: {X: 0.1, Y: 0.1, Z: 1.4}
+                                LocalOffset: {X: 0.65, Y: -0.65, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            - !BoxColliderShapeDesc
+                                ~Id: 8a5a9e1a-c868-4ebd-8cc0-892f7711bed9
+                                Is2D: false
+                                Size: {X: 0.1, Y: 0.67, Z: 1.4}
+                                LocalOffset: {X: -0.254, Y: -0.254, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.382683456, W: 0.9238795}
+                            - !BoxColliderShapeDesc
+                                ~Id: 0f07c6ce-7905-4547-ab76-074b367f5397
+                                Is2D: false
+                                Size: {X: 0.1, Y: 0.67, Z: 1.4}
+                                LocalOffset: {X: -0.57, Y: 0.29, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.1305262, W: 0.9914449}
+                            - !BoxColliderShapeDesc
+                                ~Id: 2bf11e8a-0893-4b15-a3b3-9db394dcd8ee
+                                Is2D: false
+                                Size: {X: 0.1, Y: 0.67, Z: 1.4}
+                                LocalOffset: {X: 0.29, Y: -0.57, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: -0.7933533, W: 0.6087614}
+                            - !BoxColliderShapeDesc
+                                ~Id: 07a7c658-29cd-40c4-b83a-485764e31b74
+                                Is2D: false
+                                Size: {X: 0.1, Y: 0.1, Z: 1.4}
+                                LocalOffset: {X: 0.65, Y: 0.65, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            - !BoxColliderShapeDesc
+                                ~Id: 7e315d72-ba7e-472b-8809-1778fda7d8d2
+                                Is2D: false
+                                Size: {X: 1.4, Y: 1.4, Z: 0.1}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.65}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            - !BoxColliderShapeDesc
+                                ~Id: 58a7fc23-d328-4c26-8277-ae705a575fc8
+                                Is2D: false
+                                Size: {X: 1.4, Y: 1.4, Z: 0.1}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: -0.65}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Entity:
+                Id: da6f07f1-ddd6-4b17-93fa-030fa159f7db
+                Name: ShaftCornerShort (2)
+                Components:
+                    - !TransformComponent
+                        ~Id: 3500c736-81a9-4c19-b244-f39e6f090e21
+                        Children:
+                            - afb54126-a189-408a-be33-9fb6ca55d828/5114917b-37ec-43c2-9b64-5ffcfa1fcdf1
+                        Position: {X: 1.4, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 1.0, W: -4.371139E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
         -   Entity:
                 Id: e56ac0d7-c6c5-479f-ab65-e1bac0ae797f
                 Name: Skybox
@@ -250,3 +498,87 @@ Hierarchy:
                         Type: !LightSkybox
                             ~Id: 32b8be00-b909-4294-9555-48568b23cd72
                         Intensity: 0.25
+~BaseParts:
+    -   Location: Prefabs/ShaftCornerShort
+        Asset: !PrefabAsset
+            Id: 26d4af2d-f35b-4b9c-8929-cf8e995b8429
+            SerializedVersion: {Xenko: 1.7.0-beta04}
+            Tags: []
+            Hierarchy:
+                ~Id: 312bb94c-db46-4aa3-8618-f857f66368d4
+                RootPartIds:
+                    - e1dbd4b6-49b6-4394-837e-f572dfa98a2c
+                Parts:
+                    -   Entity:
+                            Id: e1dbd4b6-49b6-4394-837e-f572dfa98a2c
+                            Name: ShaftCornerShort
+                            Components:
+                                - !TransformComponent
+                                    ~Id: 5114917b-37ec-43c2-9b64-5ffcfa1fcdf1
+                                    Children: []
+                                    Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                    Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                    Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                - !ModelComponent
+                                    ~Id: e851f6c8-93d4-47d0-b237-47847ab57fdc
+                                    Model: 54d3a550-65e9-49a8-b3b6-5ccb34612063/5fdbba0c-d4d8-4353-9c61-ce6c34d8f694:Models/ShaftCornerShort
+                                    Materials:
+                                        - null
+                                - !StaticColliderComponent
+                                    ~Id: 31e7f02a-19ed-42ba-8ef6-1170488d00ab
+                                    CanSleep: false
+                                    Restitution: 0.0
+                                    Friction: 0.5
+                                    RollingFriction: 0.0
+                                    CcdMotionThreshold: 0.0
+                                    CcdSweptSphereRadius: 0.0
+                                    IsTrigger: false
+                                    ColliderShapes:
+                                        - !BoxColliderShapeDesc
+                                            ~Id: c2407c57-12ac-40a9-b508-f7b73f2baee2
+                                            Is2D: false
+                                            Size: {X: 0.1, Y: 0.1, Z: 1.4}
+                                            LocalOffset: {X: -0.65, Y: 0.65, Z: 0.0}
+                                            LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                        - !BoxColliderShapeDesc
+                                            ~Id: 50e2b294-b8d4-4be6-b55a-73ae506bbeec
+                                            Is2D: false
+                                            Size: {X: 0.1, Y: 0.1, Z: 1.4}
+                                            LocalOffset: {X: 0.65, Y: -0.65, Z: 0.0}
+                                            LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                        - !BoxColliderShapeDesc
+                                            ~Id: 8a5a9e1a-c868-4ebd-8cc0-892f7711bed9
+                                            Is2D: false
+                                            Size: {X: 0.1, Y: 0.67, Z: 1.4}
+                                            LocalOffset: {X: -0.254, Y: -0.254, Z: 0.0}
+                                            LocalRotation: {X: 0.0, Y: 0.0, Z: 0.382683456, W: 0.9238795}
+                                        - !BoxColliderShapeDesc
+                                            ~Id: 0f07c6ce-7905-4547-ab76-074b367f5397
+                                            Is2D: false
+                                            Size: {X: 0.1, Y: 0.67, Z: 1.4}
+                                            LocalOffset: {X: -0.57, Y: 0.29, Z: 0.0}
+                                            LocalRotation: {X: 0.0, Y: 0.0, Z: 0.1305262, W: 0.9914449}
+                                        - !BoxColliderShapeDesc
+                                            ~Id: 2bf11e8a-0893-4b15-a3b3-9db394dcd8ee
+                                            Is2D: false
+                                            Size: {X: 0.1, Y: 0.67, Z: 1.4}
+                                            LocalOffset: {X: 0.29, Y: -0.57, Z: 0.0}
+                                            LocalRotation: {X: 0.0, Y: 0.0, Z: -0.7933533, W: 0.6087614}
+                                        - !BoxColliderShapeDesc
+                                            ~Id: 07a7c658-29cd-40c4-b83a-485764e31b74
+                                            Is2D: false
+                                            Size: {X: 0.1, Y: 0.1, Z: 1.4}
+                                            LocalOffset: {X: 0.65, Y: 0.65, Z: 0.0}
+                                            LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                        - !BoxColliderShapeDesc
+                                            ~Id: 7e315d72-ba7e-472b-8809-1778fda7d8d2
+                                            Is2D: false
+                                            Size: {X: 1.4, Y: 1.4, Z: 0.1}
+                                            LocalOffset: {X: 0.0, Y: 0.0, Z: 0.65}
+                                            LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                        - !BoxColliderShapeDesc
+                                            ~Id: 58a7fc23-d328-4c26-8277-ae705a575fc8
+                                            Is2D: false
+                                            Size: {X: 1.4, Y: 1.4, Z: 0.1}
+                                            LocalOffset: {X: 0.0, Y: 0.0, Z: -0.65}
+                                            LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}

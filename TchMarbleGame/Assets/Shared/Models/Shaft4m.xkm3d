@@ -1,0 +1,15 @@
+!Model
+Id: 1c0dbee0-d2d9-441a-8c71-275bde65e38b
+SerializedVersion: {Xenko: 1.5.0-alpha02}
+Tags: []
+Source: ../../../Resources/Models/Shaft4m.obj
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    -   ~Id: 2a4c44ef-f714-2d81-52a6-6afd52a66afd
+        Name: Aluminum
+        MaterialInstance:
+            ~Id: 5859c5bd-b6ec-4bda-8e38-5dd124a1156f
+            Material: eefe8b3d-c7e0-4e77-a8ea-372c7a494e9c/70a8065b-81fe-49cc-bc0f-11a633dee7cc:Materials/Aluminum_2
+Skeleton: null
+~SourceHashes:
+    ../../../Resources/Models/Shaft4m.obj: 2d9847cb93d1b35d1ac7b62736e924b8

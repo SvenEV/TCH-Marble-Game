@@ -1,0 +1,17 @@
+!MaterialAsset
+Id: 70a8065b-81fe-49cc-bc0f-11a633dee7cc
+SerializedVersion: {Xenko: 1.4.0-beta}
+Tags: []
+Attributes:
+    Diffuse: !MaterialDiffuseMapFeature
+        DiffuseMap: !ComputeTextureColor
+            Swizzle: null
+            Texture: 09a2ea46-ff2d-4321-8eb3-a625eca10a9e/90c0475c-3f16-40c5-9548-a522da1b93fd:Models/Shaft2m/Aluminum
+            FallbackValue:
+                Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+    DiffuseModel: !MaterialDiffuseLambertModelFeature {}
+    Overrides:
+        UVScale: {X: 1.0, Y: 1.0}
+Layers: []

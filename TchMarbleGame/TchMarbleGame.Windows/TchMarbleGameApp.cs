@@ -1,15 +1,24 @@
 using SiliconStudio.Xenko.Engine;
+using System;
 
 namespace TchMarbleGame
 {
     class TchMarbleGameApp
     {
+        private static Game _game;
+
         static void Main(string[] args)
         {
-            using (var game = new Game())
+            using (_game = new Game())
             {
-                game.Run();
+                _game.WindowCreated += OnWindowCreated;
+                _game.Run();
             }
+        }
+
+        private static void OnWindowCreated(object sender, EventArgs e)
+        {
+            _game.Window.AllowUserResizing = true;
         }
     }
 }

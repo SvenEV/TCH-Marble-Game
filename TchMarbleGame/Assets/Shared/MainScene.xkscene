@@ -145,6 +145,10 @@ Hierarchy:
         - 063b89e3-0bd2-4c47-92c1-da8155e2f0a3
         - da6f07f1-ddd6-4b17-93fa-030fa159f7db
         - 2ccb3a0b-40fb-4412-b6f8-131767de068f
+        - 9236dae3-f89b-4b7c-9578-3e6d78e07140
+        - 14d325c3-a57a-46a1-b351-ad231aa6a054
+        - a4e54ba5-886e-4011-8b4a-38ccd92d6742
+        - 848c3c3d-5ee9-4b9a-982b-9faf6c4b8505
     Parts:
         -   Entity:
                 Id: 063b89e3-0bd2-4c47-92c1-da8155e2f0a3
@@ -220,21 +224,32 @@ Hierarchy:
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: -0.65}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Entity:
+                Id: 14d325c3-a57a-46a1-b351-ad231aa6a054
+                Name: Shaft4m (2)
+                Components:
+                    - !TransformComponent
+                        ~Id: ea8eb6d6-978e-4f5d-9a40-e019f48f3264
+                        Children:
+                            - 684f16d8-abf1-4df0-9857-69043e2cb5d5/f1ab6fe3-843f-46e6-aa47-1faf6104aa29
+                        Position: {X: -8.004214, Y: 2.96158457, Z: -7.31551266}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+        -   Entity:
                 Id: 1ef63f6f-55aa-4f2f-ba73-88736ac2de72
                 Name: Camera
                 Components:
                     - !TransformComponent
                         ~Id: b8392852-6058-4b71-81ad-3a73389754be
                         Children: []
-                        Position: {X: -1.0, Y: 1.2, Z: 2.7}
-                        Rotation: {X: -0.08583164, Y: -0.1729874, Z: -0.0151344351, W: 0.981060266}
+                        Position: {X: 0.7517314, Y: 2.01515365, Z: 8.140848}
+                        Rotation: {X: -0.21730487, Y: 0.0, Z: 0.0, W: 0.9761038}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                     - !CameraComponent
                         ~Id: 5a79b6dc-5cf2-4314-821a-30a825c77363
                         Projection: Perspective
                     - !TchMarbleGame.BasicCameraController,TchMarbleGame.Game
                         ~Id: 44b5beb4-d516-44a2-9b3f-68fdce1cc554
-                        KeyboardMovementSpeed: {X: 5.0, Y: 5.0, Z: 5.0}
+                        KeyboardMovementSpeed: {X: 0.0, Y: 0.0, Z: 0.0}
                         TouchMovementSpeed: {X: 40.0, Y: 40.0, Z: 20.0}
                         SpeedFactor: 5.0
                         KeyboardRotationSpeed: {X: 3.0, Y: 3.0}
@@ -251,6 +266,57 @@ Hierarchy:
                         Position: {X: 1.4, Y: -1.4, Z: 0.0}
                         Rotation: {X: 0.0, Y: -0.707106769, Z: 0.0, W: 0.707106769}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+        -   BaseId: e53f206a-bd66-4c7f-8fa9-bc75a89b5709
+            BasePartInstanceId: 6ee38324-100c-47b8-86e8-cf8fcf9aa27f
+            Entity:
+                Id: 684f16d8-abf1-4df0-9857-69043e2cb5d5
+                Name: Shaft4m
+                Components:
+                    - !TransformComponent
+                        ~Id: f1ab6fe3-843f-46e6-aa47-1faf6104aa29
+                        Children: []
+                        Position*: {X: 8.001962, Y: -4.37657833, Z: 6.024151}
+                        Rotation*: {X: 0.707106769, Y: 0.0, Z: 0.0, W: 0.707106769}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                    - !ModelComponent
+                        ~Id: 6bcf4889-c1f9-48db-b91f-839577d8f75a
+                        Model: 484bd672-eeaf-45f1-a782-76c03669ddaf/1c0dbee0-d2d9-441a-8c71-275bde65e38b:Models/Shaft4m
+                        Materials:
+                            - null
+                    - !StaticColliderComponent
+                        ~Id: 0f79ad66-cdf1-4ab4-b601-48111faaa8ac
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            - !BoxColliderShapeDesc
+                                ~Id: c1f03bed-592e-458e-aa4d-5874e04f510a
+                                Is2D: false
+                                Size: {X: 0.1, Y: 4.0, Z: 1.4}
+                                LocalOffset: {X: 0.65, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            - !BoxColliderShapeDesc
+                                ~Id: fc3f1922-7e89-46f5-a193-e35e9e698579
+                                Is2D: false
+                                Size: {X: 0.1, Y: 4.0, Z: 1.4}
+                                LocalOffset: {X: -0.65, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            - !BoxColliderShapeDesc
+                                ~Id: f284df87-8e02-4c85-8def-7300b5d80a9f
+                                Is2D: false
+                                Size: {X: 1.4, Y: 4.0, Z: 0.1}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.65}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            - !BoxColliderShapeDesc
+                                ~Id: 582806e9-4ce4-42ae-bed5-404925be5ccf
+                                Is2D: false
+                                Size: {X: 1.4, Y: 4.0, Z: 0.1}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: -0.65}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Entity:
                 Id: 7b7bc716-e7b7-4fea-9662-8f0af285d4ed
                 Name: Sphere
@@ -271,7 +337,7 @@ Hierarchy:
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
-                        RollingFriction: 0.0
+                        RollingFriction: 0.5
                         CcdMotionThreshold: 0.0
                         CcdSweptSphereRadius: 0.0
                         IsTrigger: false
@@ -287,6 +353,33 @@ Hierarchy:
                                 ~Id: 2e3db091-9efc-4dec-b471-a8d09c45b25b
                                 Is2D: false
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                    - !TchMarbleGame.MarbleController,TchMarbleGame.Game
+                        ~Id: 088623ea-9002-4fd9-82a8-d09218d844b4
+                        Camera: 1ef63f6f-55aa-4f2f-ba73-88736ac2de72/5a79b6dc-5cf2-4314-821a-30a825c77363
+        -   Entity:
+                Id: 848c3c3d-5ee9-4b9a-982b-9faf6c4b8505
+                Name: Point light (2)
+                Components:
+                    - !TransformComponent
+                        ~Id: 5c64b55a-6e43-4825-bae3-906516591e1b
+                        Children: []
+                        Position: {X: 0.0359424949, Y: 0.978686869, Z: 0.129156142}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                    - !LightComponent
+                        ~Id: eb6961b7-7a2b-401f-a5d8-78f5f5afd3d4
+                        Type: !LightPoint
+                            ~Id: 11469574-48e1-4a4f-8185-37e6b4b9ff1f
+                            Color: !ColorRgbProvider
+                                ~Id: 49b5cc50-0fdb-43cd-b21a-2c84387281d9
+                                Value: {R: 0.433333337, G: 0.7025, B: 1.0}
+                            Radius: 10.0
+                            Shadow:
+                                ~Id: 977b38e9-1e72-4375-8c99-85cf8628f761
+                                Size: Small
+                                BiasParameters:
+                                    ~Id: fadcbbc6-b3ce-4832-bd12-e745b6dc7162
+                        Intensity: 2.0
         -   BaseId: e1dbd4b6-49b6-4394-837e-f572dfa98a2c
             BasePartInstanceId: 8a81dcff-c28b-4ebd-b9d2-9e4f86121b8c
             Entity:
@@ -363,6 +456,17 @@ Hierarchy:
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: -0.65}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Entity:
+                Id: 9236dae3-f89b-4b7c-9578-3e6d78e07140
+                Name: Shaft4m
+                Components:
+                    - !TransformComponent
+                        ~Id: e89ba2c1-e741-48df-9efa-ee5ecbd667a7
+                        Children:
+                            - e9b26f57-ddff-46d5-bdc1-5f7c0637d5f1/f1ab6fe3-843f-46e6-aa47-1faf6104aa29
+                        Position: {X: -2.97405934, Y: 0.0, Z: -2.08671951}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+        -   Entity:
                 Id: 983daa97-90f1-4a2a-81fa-c06605cbcdbb
                 Name: Directional light
                 Components:
@@ -392,7 +496,31 @@ Hierarchy:
                                     ~Id: b4220c79-d873-4b1d-8557-bf19bd88672c
                                 BiasParameters:
                                     ~Id: af11c704-7164-45d6-b070-6ef52b80bfa5
-                        Intensity: 5.0
+                        Intensity: 0.4
+        -   Entity:
+                Id: a4e54ba5-886e-4011-8b4a-38ccd92d6742
+                Name: Point light
+                Components:
+                    - !TransformComponent
+                        ~Id: 5c64b55a-6e43-4825-bae3-906516591e1b
+                        Children: []
+                        Position: {X: 0.722822845, Y: -0.2802791, Z: 2.272264}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                    - !LightComponent
+                        ~Id: eb6961b7-7a2b-401f-a5d8-78f5f5afd3d4
+                        Type: !LightPoint
+                            ~Id: 11469574-48e1-4a4f-8185-37e6b4b9ff1f
+                            Color: !ColorRgbProvider
+                                ~Id: 49b5cc50-0fdb-43cd-b21a-2c84387281d9
+                                Value: {R: 0.816916645, G: 0.8067052, B: 0.612687469}
+                            Radius: 10.0
+                            Shadow:
+                                ~Id: 977b38e9-1e72-4375-8c99-85cf8628f761
+                                Size: Small
+                                BiasParameters:
+                                    ~Id: fadcbbc6-b3ce-4832-bd12-e745b6dc7162
+                        Intensity: 2.0
         -   BaseId: e1dbd4b6-49b6-4394-837e-f572dfa98a2c
             BasePartInstanceId: acd30a8a-eb4f-4f3e-b9ae-4192516924a4
             Entity:
@@ -492,12 +620,63 @@ Hierarchy:
                     - !SkyboxComponent
                         ~Id: 6a29e8a0-7dcf-4dbd-8e05-6bd974d47769
                         Skybox: 511c3490-01ef-49b9-b5fc-2f5deb7719c2/310718ea-6edd-44f1-8b0e-152e84998f40:Skybox
-                        Intensity: 3.0
+                        Intensity: 0.1
                     - !LightComponent
                         ~Id: 95aab9c2-d8e7-461a-9140-e17d0acdf976
                         Type: !LightSkybox
                             ~Id: 32b8be00-b909-4294-9555-48568b23cd72
                         Intensity: 0.25
+        -   BaseId: e53f206a-bd66-4c7f-8fa9-bc75a89b5709
+            BasePartInstanceId: cf76aa30-514b-44a6-b074-a97ca628787e
+            Entity:
+                Id: e9b26f57-ddff-46d5-bdc1-5f7c0637d5f1
+                Name: Shaft4m
+                Components:
+                    - !TransformComponent
+                        ~Id: f1ab6fe3-843f-46e6-aa47-1faf6104aa29
+                        Children: []
+                        Position*: {X: 3.67328572, Y: -0.804529, Z: 4.802179}
+                        Rotation*: {X: 0.707106769, Y: 0.0, Z: 0.0, W: 0.707106769}
+                        Scale*: {X: 2.0, Y: 1.0, Z: 2.0}
+                    - !ModelComponent
+                        ~Id: 6bcf4889-c1f9-48db-b91f-839577d8f75a
+                        Model: 484bd672-eeaf-45f1-a782-76c03669ddaf/1c0dbee0-d2d9-441a-8c71-275bde65e38b:Models/Shaft4m
+                        Materials:
+                            - null
+                    - !StaticColliderComponent
+                        ~Id: 0f79ad66-cdf1-4ab4-b601-48111faaa8ac
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction*: 0.5
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            - !BoxColliderShapeDesc
+                                ~Id: c1f03bed-592e-458e-aa4d-5874e04f510a
+                                Is2D: false
+                                Size: {X: 0.1, Y: 4.0, Z: 1.4}
+                                LocalOffset: {X: 0.65, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            - !BoxColliderShapeDesc
+                                ~Id: fc3f1922-7e89-46f5-a193-e35e9e698579
+                                Is2D: false
+                                Size: {X: 0.1, Y: 4.0, Z: 1.4}
+                                LocalOffset: {X: -0.65, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            - !BoxColliderShapeDesc
+                                ~Id: f284df87-8e02-4c85-8def-7300b5d80a9f
+                                Is2D: false
+                                Size: {X: 1.4, Y: 4.0, Z: 0.1}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.65}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                            - !BoxColliderShapeDesc
+                                ~Id: 582806e9-4ce4-42ae-bed5-404925be5ccf
+                                Is2D: false
+                                Size: {X: 1.4, Y: 4.0, Z: 0.1}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: -0.65}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
 ~BaseParts:
     -   Location: Prefabs/ShaftCornerShort
         Asset: !PrefabAsset
@@ -580,5 +759,64 @@ Hierarchy:
                                             ~Id: 58a7fc23-d328-4c26-8277-ae705a575fc8
                                             Is2D: false
                                             Size: {X: 1.4, Y: 1.4, Z: 0.1}
+                                            LocalOffset: {X: 0.0, Y: 0.0, Z: -0.65}
+                                            LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+    -   Location: Prefabs/Shaft4m
+        Asset: !PrefabAsset
+            Id: 0a6ed75c-0e4f-4120-842b-a1e97941401d
+            SerializedVersion: {Xenko: 1.7.0-beta04}
+            Tags: []
+            Hierarchy:
+                ~Id: adcb757d-054c-420b-8106-52e8e9aae645
+                RootPartIds:
+                    - e53f206a-bd66-4c7f-8fa9-bc75a89b5709
+                Parts:
+                    -   Entity:
+                            Id: e53f206a-bd66-4c7f-8fa9-bc75a89b5709
+                            Name: Shaft4m
+                            Components:
+                                - !TransformComponent
+                                    ~Id: f1ab6fe3-843f-46e6-aa47-1faf6104aa29
+                                    Children: []
+                                    Position: {X: 1.8338697, Y: 0.0, Z: -0.01326251}
+                                    Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                    Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                - !ModelComponent
+                                    ~Id: 6bcf4889-c1f9-48db-b91f-839577d8f75a
+                                    Model: 484bd672-eeaf-45f1-a782-76c03669ddaf/1c0dbee0-d2d9-441a-8c71-275bde65e38b:Models/Shaft4m
+                                    Materials:
+                                        - null
+                                - !StaticColliderComponent
+                                    ~Id: 0f79ad66-cdf1-4ab4-b601-48111faaa8ac
+                                    CanSleep: false
+                                    Restitution: 0.0
+                                    Friction: 0.5
+                                    RollingFriction: 0.0
+                                    CcdMotionThreshold: 0.0
+                                    CcdSweptSphereRadius: 0.0
+                                    IsTrigger: false
+                                    ColliderShapes:
+                                        - !BoxColliderShapeDesc
+                                            ~Id: c1f03bed-592e-458e-aa4d-5874e04f510a
+                                            Is2D: false
+                                            Size: {X: 0.1, Y: 4.0, Z: 1.4}
+                                            LocalOffset: {X: 0.65, Y: 0.0, Z: 0.0}
+                                            LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                        - !BoxColliderShapeDesc
+                                            ~Id: fc3f1922-7e89-46f5-a193-e35e9e698579
+                                            Is2D: false
+                                            Size: {X: 0.1, Y: 4.0, Z: 1.4}
+                                            LocalOffset: {X: -0.65, Y: 0.0, Z: 0.0}
+                                            LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                        - !BoxColliderShapeDesc
+                                            ~Id: f284df87-8e02-4c85-8def-7300b5d80a9f
+                                            Is2D: false
+                                            Size: {X: 1.4, Y: 4.0, Z: 0.1}
+                                            LocalOffset: {X: 0.0, Y: 0.0, Z: 0.65}
+                                            LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                        - !BoxColliderShapeDesc
+                                            ~Id: 582806e9-4ce4-42ae-bed5-404925be5ccf
+                                            Is2D: false
+                                            Size: {X: 1.4, Y: 4.0, Z: 0.1}
                                             LocalOffset: {X: 0.0, Y: 0.0, Z: -0.65}
                                             LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}

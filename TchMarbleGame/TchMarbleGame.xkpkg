@@ -1,0 +1,43 @@
+!Package
+Id: de375d9b-1801-4690-995e-266439519eb0
+SerializedVersion: {Assets: 0.0.2}
+Tags: []
+Meta:
+    Name: TchMarbleGame
+    Version: 1.0.0.0
+    Authors: []
+    Owners: []
+    RootNamespace: TchMarbleGame
+    Dependencies:
+        -   Name: Xenko
+            Version: 1.8.3-beta
+            RootAssets: []
+LocalDependencies: []
+Profiles:
+    -   Name: Shared
+        Platform: Shared
+        InheritProfiles: []
+        AssetFolders:
+            -   Path: Assets/Shared
+            -   Path: TchMarbleGame.Game/Effects
+        OutputGroupDirectories: {}
+        Properties: {}
+        ProjectReferences:
+            -   Id: 6f6f5146-d321-434b-91f7-e848ccab0fee
+                Location: TchMarbleGame.Game/TchMarbleGame.Game.csproj
+                Type: Library
+    -   Name: Windows
+        Platform: Windows
+        InheritProfiles: []
+        AssetFolders:
+            -   Path: Assets/Windows
+        OutputGroupDirectories: {}
+        Properties: {}
+        ProjectReferences:
+            -   Id: 7ec385a2-278b-42cb-b58e-5ab07dfb91ee
+                Location: TchMarbleGame.Windows/TchMarbleGame.Windows.csproj
+                Type: Executable
+ExplicitFolders: []
+Bundles: []
+TemplateFolders: []
+RootAssets: []

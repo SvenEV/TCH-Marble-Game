@@ -1,5 +1,4 @@
-﻿using System;
-using SiliconStudio.Xenko.Engine;
+﻿using SiliconStudio.Xenko.Engine;
 using SiliconStudio.Xenko.Input;
 using SiliconStudio.Xenko.Physics;
 using SiliconStudio.Core.Mathematics;
@@ -14,19 +13,36 @@ namespace TchMarbleGame
 
         public override void Start()
         {
+            base.Start();
             _rigidbody = Entity.Get<RigidbodyComponent>();
+
+            VirtualButtonGroup b1, b2;
+
+            Input.VirtualButtonConfigSet = new VirtualButtonConfigSet
+            {
+                new VirtualButtonConfig
+                {
+                    new VirtualButtonBinding("Horizontal", b1 = new VirtualButtonGroup
+                    {
+                        new VirtualButtonTwoWay(VirtualButton.Keyboard.Left, VirtualButton.Keyboard.Right),
+                        VirtualButton.GamePad.LeftThumbAxisX
+                    }),
+                    new VirtualButtonBinding("Vertical", b2 = new VirtualButtonGroup
+                    {
+                        new VirtualButtonTwoWay(VirtualButton.Keyboard.Down, VirtualButton.Keyboard.Up),
+                        VirtualButton.GamePad.LeftThumbAxisY
+                    })
+                }
+            };
+
+            b1.IsDisjunction = true;
+            b2.IsDisjunction = true;
         }
 
         public override void Update()
         {
-            var horizontal = 0f;
-            var vertical = 0f;
-
-            if (Input.IsKeyDown(Keys.Right)) horizontal--;
-            if (Input.IsKeyDown(Keys.Left)) horizontal++;
-
-            if (Input.IsKeyDown(Keys.Down)) vertical--;
-            if (Input.IsKeyDown(Keys.Up)) vertical++;
+            var horizontal = -Input.GetVirtualButton(0, "Horizontal");
+            var vertical = Input.GetVirtualButton(0, "Vertical");
 
             var cameraLookDirection = Vector3.UnitZ;
             Camera.Entity.Transform.Rotation.Rotate(ref cameraLookDirection);

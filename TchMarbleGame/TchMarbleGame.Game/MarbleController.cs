@@ -33,12 +33,14 @@ namespace TchMarbleGame
                     new VirtualButtonBinding("Horizontal", b1 = new VirtualButtonGroup
                     {
                         new VirtualButtonTwoWay(VirtualButton.Keyboard.Left, VirtualButton.Keyboard.Right),
-                        VirtualButton.GamePad.LeftThumbAxisX
+                        VirtualButton.GamePad.LeftThumbAxisX,
+                        new VirtualButtonTwoWay(VirtualButton.Keyboard.A,VirtualButton.Keyboard.D)
                     }),
                     new VirtualButtonBinding("Vertical", b2 = new VirtualButtonGroup
                     {
                         new VirtualButtonTwoWay(VirtualButton.Keyboard.Down, VirtualButton.Keyboard.Up),
-                        VirtualButton.GamePad.LeftThumbAxisY
+                        VirtualButton.GamePad.LeftThumbAxisY,
+                        new VirtualButtonTwoWay(VirtualButton.Keyboard.S,VirtualButton.Keyboard.W)
                     })
                 }
             };

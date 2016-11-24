@@ -72,6 +72,7 @@ Hierarchy:
         - 14d325c3-a57a-46a1-b351-ad231aa6a054
         - a4e54ba5-886e-4011-8b4a-38ccd92d6742
         - 848c3c3d-5ee9-4b9a-982b-9faf6c4b8505
+        - f41067b2-9d3c-47ed-a413-3eefd27730e0
     Parts:
         -   Entity:
                 Id: 063b89e3-0bd2-4c47-92c1-da8155e2f0a3
@@ -172,9 +173,7 @@ Hierarchy:
                     5862935da24fd141a75731775a9cead5: !TchMarbleGame.SmoothEntityFollower,TchMarbleGame.Game
                         Id: 5d936258-4fa2-41d1-a757-31775a9cead5
                         Target: 7b7bc716-e7b7-4fea-9662-8f0af285d4ed
-                    4201aaca3a8fc74196545cf56f317944: !TchMarbleGame.FpsCounter,TchMarbleGame.Game
-                        Id: caaa0142-8f3a-41c7-9654-5cf56f317944
-                        Font: d251a484-fbc4-4fcc-9b1d-cdcc159e07b6:SpriteFont
+                        ValueValue: 0
         -   Entity:
                 Id: 2ccb3a0b-40fb-4412-b6f8-131767de068f
                 Name: ShaftCornerShort (3)
@@ -559,3 +558,21 @@ Hierarchy:
                 BasePartAsset: 0a6ed75c-0e4f-4120-842b-a1e97941401d:Prefabs/Shaft4m
                 BasePartId: e53f206a-bd66-4c7f-8fa9-bc75a89b5709
                 InstanceId: cf76aa30-514b-44a6-b074-a97ca628787e
+        -   Entity:
+                Id: f41067b2-9d3c-47ed-a413-3eefd27730e0
+                Name: FPS Entity
+                Components:
+                    45051ff6ca45937cffca62c2afd32314: !TransformComponent
+                        Id: 6099de79-7251-4982-ab71-74b39db88e1b
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c95615ae37f81c7d68f440ee08b3c215: !UIComponent
+                        Id: 26d656b4-9a9c-4eff-9c06-04e06124e6c2
+                        Page: ae4c98a0-beb2-46ff-89be-244402154abc:FPSPage
+                        Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+                        Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                    2f7e30055e6d3d14fba36e7cd46d0595: !TchMarbleGame.FpsCounter,TchMarbleGame.Game
+                        Id: 0e766bbc-727e-46ee-aeb6-652110b6aeab
+                        Font: d251a484-fbc4-4fcc-9b1d-cdcc159e07b6:SpriteFont

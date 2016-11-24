@@ -16,21 +16,7 @@ namespace TchMarbleGame
         public override void Start()
         {
             var ui = Entity.GetOrCreate<UIComponent>();
-            ui.Page = new UIPage
-            {
-                RootElement = new Border
-                {
-                    BackgroundColor = Color.Black,
-                    HorizontalAlignment = HorizontalAlignment.Left,
-                    VerticalAlignment = VerticalAlignment.Top,
-                    Padding = new Thickness(4, 4, 4, 4),
-                    Content = _uiText = new TextBlock
-                    {
-                        TextColor = Color.White,
-                        Font = Font
-                    }
-                }
-            };
+            _uiText = ui.Page.RootElement.FindName("textBlock") as TextBlock;
         }
 
         public override void Update()

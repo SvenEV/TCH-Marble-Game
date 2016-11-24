@@ -1,0 +1,33 @@
+!UIPageAsset
+Id: ae4c98a0-beb2-46ff-89be-244402154abc
+SerializedVersion: {Xenko: 1.9.0-beta01}
+Tags: []
+Design:
+    Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+Hierarchy:
+    RootPartIds:
+        - 736a4307-2e2d-4ee6-93e0-9143546e0988
+    Parts:
+        -   UIElement: !Grid
+                DependencyProperties: {}
+                Id: 736a4307-2e2d-4ee6-93e0-9143546e0988
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {}
+                Children:
+                    1db34bfa4684f4ec9aa36549672f0190: !TextBlock e54ca1cc-1a2e-47b8-ab6c-a279d40e191d
+                RowDefinitions: {}
+                ColumnDefinitions: {}
+                LayerDefinitions: {}
+        -   UIElement: !TextBlock
+                DependencyProperties: {}
+                Id: e54ca1cc-1a2e-47b8-ab6c-a279d40e191d
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 100.0
+                Height: 50.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 50.0, Top: 50.0}
+                Name: textBlock
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:XenkoDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}

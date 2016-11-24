@@ -2,6 +2,11 @@
 using SiliconStudio.Xenko.Input;
 using SiliconStudio.Xenko.Physics;
 using SiliconStudio.Core.Mathematics;
+using SiliconStudio.Core.Diagnostics;
+using SiliconStudio.Xenko.Games;
+using System;
+using System.Diagnostics;
+using SiliconStudio.Xenko.Rendering;
 
 namespace TchMarbleGame
 {
@@ -10,14 +15,17 @@ namespace TchMarbleGame
         private RigidbodyComponent _rigidbody;
 
         public CameraComponent Camera { get; set; }
-
+        
         public override void Start()
         {
             base.Start();
+
+            Profiler.Enable(GameProfilingKeys.GameDrawFPS);
+            
             _rigidbody = Entity.Get<RigidbodyComponent>();
 
             VirtualButtonGroup b1, b2;
-
+            
             Input.VirtualButtonConfigSet = new VirtualButtonConfigSet
             {
                 new VirtualButtonConfig
@@ -49,8 +57,8 @@ namespace TchMarbleGame
             cameraLookDirection.Y = 0;
             cameraLookDirection.Normalize();
 
-            var torqueHorizontal = cameraLookDirection * 10 * horizontal;
-            var torqueVertical = Vector3.Cross(cameraLookDirection, Vector3.UnitY) * 10 * vertical;
+            var torqueHorizontal = cameraLookDirection * 2 * horizontal;
+            var torqueVertical = Vector3.Cross(cameraLookDirection, Vector3.UnitY) * 2 * vertical;
 
             _rigidbody.ApplyTorque(torqueHorizontal + torqueVertical);
         }

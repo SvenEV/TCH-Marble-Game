@@ -5,11 +5,8 @@ Tags: []
 Source: ../../../Resources/Models/ShaftCorner.obj
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
-    -   ~Id: 2a4c44ef-f714-2d81-52a6-6afd52a66afd
+    ef444c2a14f7812d52a66afd52a66afd:
         Name: Aluminum
         MaterialInstance:
-            ~Id: b195d7e1-e07e-4ccd-812e-7b7713a06c1a
-            Material: eefe8b3d-c7e0-4e77-a8ea-372c7a494e9c/70a8065b-81fe-49cc-bc0f-11a633dee7cc:Materials/Aluminum_2
+            Material: 70a8065b-81fe-49cc-bc0f-11a633dee7cc:Materials/Aluminum_2
 Skeleton: null
-~SourceHashes:
-    ../../../Resources/Models/ShaftCorner.obj: 568a3cafb1b09b8066a5196d35ad51c8

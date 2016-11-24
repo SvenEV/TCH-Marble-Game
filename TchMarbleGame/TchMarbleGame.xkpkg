@@ -1,6 +1,6 @@
 !Package
 Id: de375d9b-1801-4690-995e-266439519eb0
-SerializedVersion: {Assets: 0.0.2}
+SerializedVersion: {Assets: 0.0.4}
 Tags: []
 Meta:
     Name: TchMarbleGame
@@ -10,7 +10,7 @@ Meta:
     RootNamespace: TchMarbleGame
     Dependencies:
         -   Name: Xenko
-            Version: 1.8.3-beta
+            Version: 1.9.0-beta
             RootAssets: []
 LocalDependencies: []
 Profiles:
@@ -21,7 +21,6 @@ Profiles:
             -   Path: Assets/Shared
             -   Path: TchMarbleGame.Game/Effects
         OutputGroupDirectories: {}
-        Properties: {}
         ProjectReferences:
             -   Id: 6f6f5146-d321-434b-91f7-e848ccab0fee
                 Location: TchMarbleGame.Game/TchMarbleGame.Game.csproj
@@ -32,7 +31,6 @@ Profiles:
         AssetFolders:
             -   Path: Assets/Windows
         OutputGroupDirectories: {}
-        Properties: {}
         ProjectReferences:
             -   Id: 7ec385a2-278b-42cb-b58e-5ab07dfb91ee
                 Location: TchMarbleGame.Windows/TchMarbleGame.Windows.csproj

@@ -5,13 +5,13 @@ Tags: []
 Attributes:
     Diffuse: !MaterialDiffuseMapFeature
         DiffuseMap: !ComputeTextureColor
-            Swizzle: null
-            Texture: 09a2ea46-ff2d-4321-8eb3-a625eca10a9e/90c0475c-3f16-40c5-9548-a522da1b93fd:Materials/Aluminum
+            Texture: 90c0475c-3f16-40c5-9548-a522da1b93fd:Materials/Aluminum
             FallbackValue:
                 Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
             Scale: {X: 1.0, Y: 1.0}
             Offset: {X: 0.0, Y: 0.0}
+            Swizzle: null
     DiffuseModel: !MaterialDiffuseLambertModelFeature {}
     Overrides:
         UVScale: {X: 1.0, Y: 1.0}
-Layers: []
+Layers: {}

@@ -19,8 +19,6 @@ namespace TchMarbleGame
         public override void Start()
         {
             base.Start();
-
-            Profiler.Enable(GameProfilingKeys.GameDrawFPS);
             
             _rigidbody = Entity.Get<RigidbodyComponent>();
 

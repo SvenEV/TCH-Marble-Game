@@ -393,6 +393,9 @@ Hierarchy:
                                 PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
                                 BiasParameters: {}
                         Intensity: 0.4
+                    af11adfff53d1ddb21eb49f87c673f81: !TchMarbleGame.FpsCounter,TchMarbleGame.Game
+                        Id: f0ffb242-8dd1-4577-8e1c-aa90b317778e
+                        Font: d251a484-fbc4-4fcc-9b1d-cdcc159e07b6:SpriteFont
         -   Entity:
                 Id: a4e54ba5-886e-4011-8b4a-38ccd92d6742
                 Name: Point light
@@ -570,9 +573,9 @@ Hierarchy:
                         Children: {}
                     c95615ae37f81c7d68f440ee08b3c215: !UIComponent
                         Id: 26d656b4-9a9c-4eff-9c06-04e06124e6c2
-                        Page: ae4c98a0-beb2-46ff-89be-244402154abc:FPSPage
+                        Page: ae4c98a0-beb2-46ff-89be-244402154abc:Page
                         Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
                         Size: {X: 1.0, Y: 1.0, Z: 1.0}
                     2f7e30055e6d3d14fba36e7cd46d0595: !TchMarbleGame.FpsCounter,TchMarbleGame.Game
                         Id: 0e766bbc-727e-46ee-aeb6-652110b6aeab
-                        Font: d251a484-fbc4-4fcc-9b1d-cdcc159e07b6:SpriteFont
+                        Font: null

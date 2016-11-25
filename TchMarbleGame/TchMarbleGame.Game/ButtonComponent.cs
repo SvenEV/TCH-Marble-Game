@@ -5,10 +5,12 @@ using SiliconStudio.Xenko.Engine;
 using SiliconStudio.Xenko.Physics;
 using SiliconStudio.Xenko.Rendering.Materials;
 using System.Diagnostics;
-using System.Linq;
 
 namespace TchMarbleGame
 {
+    /// <summary>
+    /// Controls a button that can be physically pushed and released.
+    /// </summary>
     public class ButtonComponent : AsyncScript
     {
         private bool _isPressed = false;
@@ -17,10 +19,19 @@ namespace TchMarbleGame
 
         public RigidbodyComponent GroundPlateRigidbody { get; set; }
 
+        /// <summary>
+        /// This event is raised when the button is pressed.
+        /// </summary>
         public event Action<ButtonComponent> Pressed;
 
+        /// <summary>
+        /// This event is raised when the button is released.
+        /// </summary>
         public event Action<ButtonComponent> Released;
 
+        /// <summary>
+        /// Indicates whether the button is currently pressed.
+        /// </summary>
         public bool IsPressed
         {
             get { return _isPressed; }

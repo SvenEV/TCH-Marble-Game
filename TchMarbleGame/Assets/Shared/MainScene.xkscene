@@ -72,6 +72,7 @@ Hierarchy:
         - 14d325c3-a57a-46a1-b351-ad231aa6a054
         - a4e54ba5-886e-4011-8b4a-38ccd92d6742
         - 848c3c3d-5ee9-4b9a-982b-9faf6c4b8505
+        - f41067b2-9d3c-47ed-a413-3eefd27730e0
     Parts:
         -   Entity:
                 Id: 063b89e3-0bd2-4c47-92c1-da8155e2f0a3
@@ -424,6 +425,9 @@ Hierarchy:
                                 PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
                                 BiasParameters: {}
                         Intensity: 0.4
+                    af11adfff53d1ddb21eb49f87c673f81: !TchMarbleGame.FpsCounter,TchMarbleGame.Game
+                        Id: f0ffb242-8dd1-4577-8e1c-aa90b317778e
+                        Font: d251a484-fbc4-4fcc-9b1d-cdcc159e07b6:SpriteFont
         -   Entity:
                 Id: a4e54ba5-886e-4011-8b4a-38ccd92d6742
                 Name: Point light
@@ -589,3 +593,21 @@ Hierarchy:
                 BasePartAsset: 0a6ed75c-0e4f-4120-842b-a1e97941401d:Prefabs/Shaft4m
                 BasePartId: e53f206a-bd66-4c7f-8fa9-bc75a89b5709
                 InstanceId: cf76aa30-514b-44a6-b074-a97ca628787e
+        -   Entity:
+                Id: f41067b2-9d3c-47ed-a413-3eefd27730e0
+                Name: FPS Entity
+                Components:
+                    45051ff6ca45937cffca62c2afd32314: !TransformComponent
+                        Id: 6099de79-7251-4982-ab71-74b39db88e1b
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c95615ae37f81c7d68f440ee08b3c215: !UIComponent
+                        Id: 26d656b4-9a9c-4eff-9c06-04e06124e6c2
+                        Page: ae4c98a0-beb2-46ff-89be-244402154abc:Page
+                        Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+                        Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                    2f7e30055e6d3d14fba36e7cd46d0595: !TchMarbleGame.FpsCounter,TchMarbleGame.Game
+                        Id: 0e766bbc-727e-46ee-aeb6-652110b6aeab
+                        Font: null

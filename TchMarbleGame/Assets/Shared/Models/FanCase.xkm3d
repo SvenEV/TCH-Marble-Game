@@ -1,0 +1,13 @@
+!Model
+Id: 4b8306fd-076f-47de-9a37-1a1fa14b11d5
+SerializedVersion: {Xenko: 1.5.0-alpha02}
+Tags: []
+Source: ../../../Resources/Models/Fan/FanCase.obj
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+ScaleImport: 20.0
+Materials:
+    5c5f1a192d6d0c0c4b1e64d52f3fa7c6:
+        Name: Default_Material
+        MaterialInstance:
+            Material: 687d5b26-f7c8-44d2-9d7d-c0b8dd2a6fcd:Materials/BlackPlastic
+Skeleton: null

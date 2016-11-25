@@ -111,8 +111,10 @@
     <Compile Include="BalloonBehavior.cs" />
     <Compile Include="BasicCameraController.cs" />
     <Compile Include="ButtonComponent.cs" />
+    <Compile Include="FanBehavior.cs" />
     <Compile Include="FpsCounter.cs" />
     <Compile Include="MarbleController.cs" />
+    <Compile Include="MyTestScript.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SmoothEntityFollower.cs" />
   </ItemGroup>

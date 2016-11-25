@@ -2,6 +2,7 @@
 using SiliconStudio.Xenko.Input;
 using SiliconStudio.Xenko.Engine;
 using SiliconStudio.Xenko.Physics;
+using SiliconStudio.Core;
 
 namespace TchMarbleGame
 {
@@ -27,6 +28,7 @@ namespace TchMarbleGame
         /// <summary>
         /// Toggle this property to inflate and deflate the entity.
         /// </summary>
+        [DataMemberIgnore]
         public bool IsInflated { get; set; }
 
         public override void Start()

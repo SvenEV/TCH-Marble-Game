@@ -1,0 +1,81 @@
+!PrefabAsset
+Id: db5a1de4-79cd-4596-b69e-d4a3d2cbf437
+SerializedVersion: {Xenko: 1.9.0-beta04}
+Tags: []
+Hierarchy:
+    RootPartIds:
+        - 3d90055b-572d-4a23-8095-fb65bca70493
+        - 8fc89ecc-d782-4961-8308-6c6f81500e46
+        - c389c0cd-5998-49fc-a92f-b51d44eed0b7
+    Parts:
+        -   Entity:
+                Id: 3d90055b-572d-4a23-8095-fb65bca70493
+                Name: FanCase
+                Components:
+                    d55c71a6001e6e41577c73529bb55def: !TransformComponent
+                        Id: fca16fd6-6258-4e97-9967-251fbbcbd4bf
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c2fd886588f37d27f0c11867e81934af: !ModelComponent
+                        Id: be24f44f-47b7-483b-973a-013d57dc6c97
+                        Model: 4b8306fd-076f-47de-9a37-1a1fa14b11d5:Models/FanCase
+                        Materials: {}
+                    422413d20ef86043fc36ad1399371fb4: !StaticColliderComponent
+                        Id: aabee70c-d29f-44e4-97e9-66fca12c9a21
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            7dd0a8af55689c04c238b1884c3f0009: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.6, Y: 0.4, Z: 1.6}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Entity:
+                Id: 8fc89ecc-d782-4961-8308-6c6f81500e46
+                Name: Fan
+                Components:
+                    242786e2b08a21dfb41f761d216719fd: !TransformComponent
+                        Id: ae425825-8b81-42d7-8a80-2b18987f4a97
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    79fbc4c8ea3ddb960406f3422b42331f: !ModelComponent
+                        Id: af367732-8eab-4b43-a8f8-697c49c19b8e
+                        Model: eee1f19a-5199-441a-80d0-10a27bde6ac8:Models/Fan
+                        Materials: {}
+                    0bb6ee0a7ae77d793e94fcd29f2b20f7: !TchMarbleGame.FanBehavior,TchMarbleGame.Game
+                        Id: 56f54dbc-a542-493d-9668-e36b837f6b86
+                        ImpactArea: c389c0cd-5998-49fc-a92f-b51d44eed0b7/f2da896f-84e1-4e9f-be99-3affb34f5d29
+        -   Entity:
+                Id: c389c0cd-5998-49fc-a92f-b51d44eed0b7
+                Name: ImpactArea
+                Components:
+                    1ab83c918c8be45834d2ffb89b8235af: !TransformComponent
+                        Id: c3c94810-210a-4281-bfb7-0f8442a297b7
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    002bbe022f4eb77a73dc980ddf005bbc: !StaticColliderComponent
+                        Id: f2da896f-84e1-4e9f-be99-3affb34f5d29
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        ColliderShapes:
+                            2391e8e8cc7f0575e870316d09578ebb: !CylinderColliderShapeDesc
+                                Height: 6.0
+                                Radius: 1.6
+                                LocalOffset: {X: 0.0, Y: 3.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}

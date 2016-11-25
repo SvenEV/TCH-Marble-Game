@@ -1,57 +1,52 @@
-﻿using System.Diagnostics;
-using System.Threading.Tasks;
-using SiliconStudio.Core.Mathematics;
+﻿using SiliconStudio.Core.Mathematics;
 using SiliconStudio.Xenko.Input;
 using SiliconStudio.Xenko.Engine;
 using SiliconStudio.Xenko.Physics;
-using SiliconStudio.Xenko.Animations;
 
 namespace TchMarbleGame
 {
-    public class BalloonBehavior : AsyncScript
+    /// <summary>
+    /// Enables an entity to smoothly scale up and scale down in size,
+    /// like inflating and deflating a balloon.
+    /// </summary>
+    public class BalloonBehavior : SyncScript
     {
-        // Declared public member fields and properties will show in the game studio
-        
-        public ComputeAnimationCurve<float> InflationCurve { get; set; }
-        
+        private Vector3 _initialScale;
+        private ColliderShape _colliderShape;
+
         /// <summary>
         /// The time in seconds it takes for the entity to inflate or deflate.
         /// </summary>
         public float InflationDuration { get; set; }
 
-        public override async Task Execute()
-        {
-            var isInflated = false;
-            var colliderShape = Entity.Get<RigidbodyComponent>()?.ColliderShape;             
-                    
-            while(Game.IsRunning)
-            {
-                if (Input.IsKeyPressed(Keys.Space))
-                {
-                    var sw = Stopwatch.StartNew();
-                    
-                    var startScale = Entity.Transform.Scale;
-                    var endScale = (isInflated ? .5f : 2) * Entity.Transform.Scale;
-                    
-                    while (sw.Elapsed.TotalSeconds < InflationDuration)
-                    { 
-                        var t = (float)sw.Elapsed.TotalSeconds / InflationDuration;
-                        var scale = Vector3.Lerp(startScale, endScale, t /*InflationCurve.Evaluate(t)*/);
-                        
-                        Entity.Transform.Scale = scale;
-                        
-                        if (colliderShape != null)
-                            colliderShape.Scaling = scale;
+        /// <summary>
+        /// The factor by which the scale of the entity is multiplied on inflation.
+        /// </summary>
+        public float InflationFactor { get; set; } = 2;
 
-                        await Script.NextFrame();
-                    }
-                    
-                    isInflated = !isInflated;
-                }
-            
-                // Do stuff every new frame
-                await Script.NextFrame();
-            }
+        /// <summary>
+        /// Toggle this property to inflate and deflate the entity.
+        /// </summary>
+        public bool IsInflated { get; set; }
+
+        public override void Start()
+        {
+            _initialScale = Entity.Transform.Scale;
+            _colliderShape = Entity.Get<PhysicsComponent>().ColliderShape;
+        }
+
+        public override void Update()
+        {
+            if (Input.IsKeyPressed(Keys.Space))
+                IsInflated = !IsInflated;
+
+            var targetScale = _initialScale * (IsInflated ? InflationFactor : 1);
+            var scale = Vector3.Lerp(Entity.Transform.Scale, targetScale, .2f);
+
+            // We have to scale both, the graphical shape and the physical shape
+            Entity.Transform.Scale = scale;
+            if (_colliderShape != null)
+                _colliderShape.Scaling = scale;
         }
     }
 }

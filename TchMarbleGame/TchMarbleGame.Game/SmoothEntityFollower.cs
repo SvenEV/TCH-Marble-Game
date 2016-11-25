@@ -11,8 +11,6 @@ namespace TchMarbleGame
         /// </summary>
         public Entity Target { get; set; }
         
-        public int ValueValue{get;set;}
-
         public override async Task Execute()
         {
             // At the beginning, determine the distance to the target entity.            

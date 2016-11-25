@@ -108,6 +108,7 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BalloonBehavior.cs" />
     <Compile Include="BasicCameraController.cs" />
     <Compile Include="FpsCounter.cs" />
     <Compile Include="MarbleController.cs" />

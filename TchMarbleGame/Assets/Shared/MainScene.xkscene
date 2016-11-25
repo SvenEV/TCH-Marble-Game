@@ -161,20 +161,9 @@ Hierarchy:
                     dcb6795af25c1443821a30a825c77363: !CameraComponent
                         Id: 5a79b6dc-5cf2-4314-821a-30a825c77363
                         Projection: Perspective
-                    b4beb54416d5a2449b3f68fdce1cc554: !TchMarbleGame.BasicCameraController,TchMarbleGame.Game
-                        Id: 44b5beb4-d516-44a2-9b3f-68fdce1cc554
-                        KeyboardMovementSpeed: {X: 0.0, Y: 0.0, Z: 0.0}
-                        TouchMovementSpeed: {X: 40.0, Y: 40.0, Z: 20.0}
-                        SpeedFactor: 5.0
-                        KeyboardRotationSpeed: {X: 3.0, Y: 3.0}
-                        MouseRotationSpeed: {X: 90.0, Y: 60.0}
-                        TouchRotationSpeed: {X: 60.0, Y: 40.0}
-                    5862935da24fd141a75731775a9cead5: !TchMarbleGame.SmoothEntityFollower,TchMarbleGame.Game
-                        Id: 5d936258-4fa2-41d1-a757-31775a9cead5
+                    9aad274665ef62bfe3def103ee637463: !TchMarbleGame.SmoothEntityFollower,TchMarbleGame.Game
+                        Id: 7929030f-fc5f-4f3f-b793-5daddd2cd01b
                         Target: 7b7bc716-e7b7-4fea-9662-8f0af285d4ed
-                    4201aaca3a8fc74196545cf56f317944: !TchMarbleGame.FpsCounter,TchMarbleGame.Game
-                        Id: caaa0142-8f3a-41c7-9654-5cf56f317944
-                        Font: d251a484-fbc4-4fcc-9b1d-cdcc159e07b6:SpriteFont
         -   Entity:
                 Id: 2ccb3a0b-40fb-4412-b6f8-131767de068f
                 Name: ShaftCornerShort (3)
@@ -268,8 +257,49 @@ Hierarchy:
                             91b03d2efc9eec4db471a8d09c45b25b: !SphereColliderShapeDesc
                                 Is2D: false
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
-                    ea2386080290d94f82a8d09218d844b4: !TchMarbleGame.MarbleController,TchMarbleGame.Game
-                        Id: 088623ea-9002-4fd9-82a8-d09218d844b4
+                    2fed8ed3b2cf7ba74583f1b887b1c83c: !TchMarbleGame.BalloonBehavior,TchMarbleGame.Game
+                        Id: 7e553fb4-a7ef-45ac-af3f-b1db66acf5f5
+                        InflationCurve: !ComputeAnimationCurveFloat
+                            KeyFrames:
+                                34f351c4e1714a0154c5a68a21b87939:
+                                    Key: 0.0
+                                    Value: 1.0
+                                    TangentType: Linear
+                                0a61e27aed43f89c63006df9ce77ba99:
+                                    Key: 0.158785552
+                                    Value: 1.06843507
+                                    TangentType: Linear
+                                af1418cf58b58b24fe4ed8fdf1a96b69:
+                                    Key: 0.2915003
+                                    Value: 1.17327464
+                                    TangentType: Linear
+                                bc617e43e1f438adfd947c168547f8e9:
+                                    Key: 0.408601552
+                                    Value: 1.30546379
+                                    TangentType: Linear
+                                a7819b819b913ae3c06ed7a3a3e95bb4:
+                                    Key: 0.4944758
+                                    Value: 1.50146818
+                                    TangentType: Linear
+                                9711cc1bb7452d74cfbd4df5b42c9f7c:
+                                    Key: 0.580350041
+                                    Value: 1.69291449
+                                    TangentType: Linear
+                                abdde25d593736f80d3be42cf867d51a:
+                                    Key: 0.6896446
+                                    Value: 1.86156952
+                                    TangentType: Linear
+                                0dcb7868a70a3d8eca8ba702a681c259:
+                                    Key: 0.809348047
+                                    Value: 1.96640909
+                                    TangentType: Linear
+                                2eaba3e9e9b595eb440ed18012b72079:
+                                    Key: 1.0
+                                    Value: 2.0
+                                    TangentType: Linear
+                        InflationDuration: 0.7
+                    5bdfbdab15c046e85080cab7c8a2710b: !TchMarbleGame.MarbleController,TchMarbleGame.Game
+                        Id: b477de79-7d9c-4b1c-8d34-87c2d55d6513
                         Camera: 1ef63f6f-55aa-4f2f-ba73-88736ac2de72/5a79b6dc-5cf2-4314-821a-30a825c77363
         -   Entity:
                 Id: 848c3c3d-5ee9-4b9a-982b-9faf6c4b8505

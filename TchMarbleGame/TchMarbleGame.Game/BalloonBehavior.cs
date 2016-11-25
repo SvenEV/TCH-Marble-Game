@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
+﻿using System.Diagnostics;
 using System.Threading.Tasks;
 using SiliconStudio.Core.Mathematics;
 using SiliconStudio.Xenko.Input;
@@ -25,8 +21,6 @@ namespace TchMarbleGame
 
         public override async Task Execute()
         {
-            this.GetSimulation().ColliderShapesRendering = true;
-        
             var isInflated = false;
             var colliderShape = Entity.Get<RigidbodyComponent>()?.ColliderShape;             
                     

@@ -41,6 +41,9 @@ Hierarchy:
                             4b223931262999b639c0f643fda9ae35: !CylinderColliderShapeDesc
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    be3aac4d6db3b95f048d40196abde1d3: !TchMarbleGame.ButtonComponent,TchMarbleGame.Game
+                        Id: 65c98ee8-3be6-440f-81aa-db7908c0f360
+                        GroundPlateRigidbody: e8851b33-0489-430e-83b0-c1d7854c1a64/98be2f8c-6063-42f4-abae-ee132b336d27
         -   Entity:
                 Id: e8851b33-0489-430e-83b0-c1d7854c1a64
                 Name: GroundPlate
@@ -56,3 +59,25 @@ Hierarchy:
                         Model: 1cb46e05-7f3d-4301-99dd-4c8c1d3f8e8f:Models/Cube
                         Materials:
                             cbfe2a3758027cfdb3c1b0fdc4882c8b~0: ccff685f-0089-4faf-8239-232b6dfe14ea:Materials/Silver
+                    589ce7874c1c24be63dd0cfa3db03e5c: !RigidbodyComponent
+                        Id: 98be2f8c-6063-42f4-abae-ee132b336d27
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            0280200e61e82c1efadd44d8da5fa546: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}

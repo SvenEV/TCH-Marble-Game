@@ -110,6 +110,7 @@
   <ItemGroup>
     <Compile Include="BalloonBehavior.cs" />
     <Compile Include="BasicCameraController.cs" />
+    <Compile Include="ButtonComponent.cs" />
     <Compile Include="FpsCounter.cs" />
     <Compile Include="MarbleController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

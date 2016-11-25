@@ -3,5 +3,56 @@ Id: ef76e991-3d84-4172-bfb5-4e6b3572d2b9
 SerializedVersion: {Xenko: 1.9.0-beta04}
 Tags: []
 Hierarchy:
-    RootPartIds: []
-    Parts: []
+    RootPartIds:
+        - e8851b33-0489-430e-83b0-c1d7854c1a64
+        - 0195f6a1-06b6-4539-93b6-eb49886fd1ca
+    Parts:
+        -   Entity:
+                Id: 0195f6a1-06b6-4539-93b6-eb49886fd1ca
+                Name: PushThing
+                Components:
+                    25bbbfe5a16e4e223e4182d2c68faf38: !TransformComponent
+                        Id: 97d4fd6e-4fdc-47f9-9640-5050e5147a81
+                        Position: {X: 0.0, Y: 0.1, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.8, Y: 0.1, Z: 0.8}
+                        Children: {}
+                    8b8dec52e6a834388b6c5de7b9db0f46: !ModelComponent
+                        Id: 378d596f-e207-4750-af48-b98680c352cd
+                        Model: 087b88bc-5fe5-470c-9ddc-37078b53072d:Models/Cylinder
+                        Materials: {}
+                    dff6a6269cc36145e7855aa89f9181c7: !RigidbodyComponent
+                        Id: 6fba81a1-43b1-448a-95c1-2b87dcfe6df4
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: false
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            4b223931262999b639c0f643fda9ae35: !CylinderColliderShapeDesc
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Entity:
+                Id: e8851b33-0489-430e-83b0-c1d7854c1a64
+                Name: GroundPlate
+                Components:
+                    25bbbfe5a16e4e223e4182d2c68faf38: !TransformComponent
+                        Id: 97d4fd6e-4fdc-47f9-9640-5050e5147a81
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 0.1, Z: 1.0}
+                        Children: {}
+                    8b8dec52e6a834388b6c5de7b9db0f46: !ModelComponent
+                        Id: 378d596f-e207-4750-af48-b98680c352cd
+                        Model: 1cb46e05-7f3d-4301-99dd-4c8c1d3f8e8f:Models/Cube
+                        Materials:
+                            cbfe2a3758027cfdb3c1b0fdc4882c8b~0: ccff685f-0089-4faf-8239-232b6dfe14ea:Materials/Silver

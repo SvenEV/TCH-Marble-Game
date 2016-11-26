@@ -39,9 +39,6 @@ namespace TchMarbleGame
 
         public override void Update()
         {
-            if (Input.IsKeyPressed(Keys.Space))
-                IsInflated = !IsInflated;
-
             var targetScale = _initialScale * (IsInflated ? InflationFactor : 1);
             var scale = Vector3.Lerp(Entity.Transform.Scale, targetScale, .2f);
 

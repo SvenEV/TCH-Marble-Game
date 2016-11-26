@@ -349,9 +349,6 @@ Hierarchy:
                     5bdfbdab15c046e85080cab7c8a2710b: !TchMarbleGame.MarbleController,TchMarbleGame.Game
                         Id: b477de79-7d9c-4b1c-8d34-87c2d55d6513
                         Camera: 1ef63f6f-55aa-4f2f-ba73-88736ac2de72/5a79b6dc-5cf2-4314-821a-30a825c77363
-                    b76d4c497257ab1bddfcac2b5492cf87: !TchMarbleGame.MyTestScript,TchMarbleGame.Game
-                        Id: 4ba4da8d-c519-42e9-8f6e-7d965a8c2fc0
-                        Button: bfae080b-2b14-4b33-ba1f-efb93034ff81/65c98ee8-3be6-440f-81aa-db7908c0f360
         -   Entity:
                 Id: 848c3c3d-5ee9-4b9a-982b-9faf6c4b8505
                 Name: Point light (2)

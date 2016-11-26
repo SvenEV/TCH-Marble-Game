@@ -622,6 +622,28 @@ Hierarchy:
                     0bb6ee0a7ae77d793e94fcd29f2b20f7: !TchMarbleGame.FanBehavior,TchMarbleGame.Game
                         Id: 56f54dbc-a542-493d-9668-e36b837f6b86
                         ImpactArea: 3f2c055c-37f2-4653-9334-4e3847a6f0bf/f2da896f-84e1-4e9f-be99-3affb34f5d29
+                        AppliedForce: 3.0
+                        IsEnabled: false
+                    d87aafa3d2f25b10e63b483708008b00: !RigidbodyComponent
+                        Id: d259b7d2-c020-498c-b271-e00a6ea96df2
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic*: false
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.4
+                        OverrideGravity*: true
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            9b9a7ea21ed731a0a93788318c7861b3: !SphereColliderShapeDesc
+                                Is2D: false
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
             Base:
                 BasePartAsset: db5a1de4-79cd-4596-b69e-d4a3d2cbf437:Prefabs/Fan
                 BasePartId: 8fc89ecc-d782-4961-8308-6c6f81500e46
@@ -632,8 +654,8 @@ Hierarchy:
                 Components:
                     c0d59d3ee1415e28b296fd22128fdb01: !TransformComponent
                         Id: 4454ad58-8f73-49a7-b718-dd13dccfbb0f
-                        Position: {X: 0.7839969, Y: -2.61339521, Z: 5.694709}
-                        Rotation: {X: 0.0, Y: 0.0, Z: -0.0110110939, W: 0.9999393}
+                        Position: {X: -0.371460855, Y: -0.4348251, Z: 1.98861408}
+                        Rotation: {X: 0.0, Y: 0.0, Z: -0.700147569, W: 0.7139981}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c5d3827cf7ea8245fcca08527de38365: fbca10ba-3bff-4495-a1f8-baf4be60a813/fca16fd6-6258-4e97-9967-251fbbcbd4bf

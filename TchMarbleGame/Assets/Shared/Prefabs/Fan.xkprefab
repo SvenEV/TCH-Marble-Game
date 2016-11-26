@@ -54,6 +54,28 @@ Hierarchy:
                     0bb6ee0a7ae77d793e94fcd29f2b20f7: !TchMarbleGame.FanBehavior,TchMarbleGame.Game
                         Id: 56f54dbc-a542-493d-9668-e36b837f6b86
                         ImpactArea: c389c0cd-5998-49fc-a92f-b51d44eed0b7/f2da896f-84e1-4e9f-be99-3affb34f5d29
+                        AppliedForce: 3.0
+                        IsEnabled: false
+                    d87aafa3d2f25b10e63b483708008b00: !RigidbodyComponent
+                        Id: d259b7d2-c020-498c-b271-e00a6ea96df2
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.4
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            9b9a7ea21ed731a0a93788318c7861b3: !SphereColliderShapeDesc
+                                Is2D: false
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Entity:
                 Id: c389c0cd-5998-49fc-a92f-b51d44eed0b7
                 Name: ImpactArea

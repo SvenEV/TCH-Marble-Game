@@ -15,6 +15,11 @@ namespace TchMarbleGame
         /// </summary>
         public StaticColliderComponent ImpactArea { get; set; }
 
+        /// <summary>
+        /// The force with which the fan blows entities away.
+        /// </summary>
+        public float AppliedForce { get; set; } = 3;
+
         public override void Start()
         {
             Script.AddTask(HandleNewCollisions);
@@ -52,8 +57,17 @@ namespace TchMarbleGame
             foreach (var rigidbody in _entitiesInRange)
             {
                 var distance = Vector3.Distance(Entity.Transform.Position, rigidbody.Entity.Transform.Position);
-                var force = 3 * (10 - distance);
-                rigidbody.ApplyForce(force * Vector3.UnitY);
+                var force = AppliedForce * (10 - distance);
+
+                var fanDirection = Vector3.UnitY;
+
+                Vector3 worldPosition, worldScale;
+                Quaternion worldRotation;
+
+                ImpactArea.Entity.Transform.WorldMatrix.Decompose(out worldPosition, out worldRotation, out worldScale);
+                worldRotation.Rotate(ref fanDirection);
+
+                rigidbody.ApplyForce(force * fanDirection);
             }
 
             Entity.Transform.Rotation *= Quaternion.RotationY(1);
